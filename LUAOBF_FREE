@@ -96,7 +96,7 @@ function obfuscate(source,VarName,WaterMark)
         Loadstring = random_(math.random(15,20)),
     }
 
-    local troll_func = [[function() ]]..add_binary(math.random(30,50), "")..[[ end]]
+    local troll_func = [[function() ]]..add_binary(math.random(500,1000), "")..[[ end]]
     local troll_var = [[local ]]..Variable..tostring(random_(math.random(15,20)))..[[ = ]]..troll_func
 
     local SourceByte = ""

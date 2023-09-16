@@ -6,7 +6,7 @@
 --// Source
 function obfuscate(source,VarName,WaterMark)
     warn("เริ่ม OBF")
-    local Variable = VarName or "Taurus_"
+    local Variable = VarName or "Kalon_"
     local WM
 
     if source == nil then
@@ -77,34 +77,10 @@ function obfuscate(source,VarName,WaterMark)
             "GhostyDuckyy",
             "Free obfuscator!",
             "E",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
-            "kalon.exe",
-            "กูเกรียนมึงละ",
-            "Deobf หาพ่อมึงหรอ",
-            "Kuy",
+            "HEE",
+            "HUM",
+            "เงี่ยน",
+            "เอาตูดกัน",
             random_(math.random(50,150)),
         }
 

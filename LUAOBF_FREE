@@ -1,4 +1,4 @@
-function obfuscate(source,VarName,WaterMark)
+function obfuscate(source)
     warn("เริ่ม OBF")
     local Variable = VarName or "Kalon_"
     local WM
@@ -20,6 +20,10 @@ function obfuscate(source,VarName,WaterMark)
     local random_ = function(length)
         local letters = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"}
         local code
+        local alphabet = "abcdefghijklmnopqrstuvwxyz"
+        local randomIndex = math.random(1, #alphabet)
+        local randomChar = alphabet:sub(randomIndex, randomIndex)
+
 
         if math.random(1,2) == 1 then
             code = ""..letters[math.random(1,26)]
@@ -33,10 +37,10 @@ function obfuscate(source,VarName,WaterMark)
                 if math.random(1,2) == 1 then
                     code = code..tostring(get_letters):upper()
                 else
-                    code = code..tostring(get_letters)
+                    code = code..tostring(get_letters)..letters
                 end
-            else -- number
-                code = code..tostring(math.random(0,9))
+            else
+                code = code..tostring(math.random(0,9))..letters
             end
         end
         return tostring(code)
@@ -135,7 +139,6 @@ function obfuscate(source,VarName,WaterMark)
 return
 end
 
---// Module
 return function(source,CustomVarName,WaterMark)
 task.spawn(function()
     obfuscate(source,CustomVarName,WaterMark)

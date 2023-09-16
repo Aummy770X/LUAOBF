@@ -1,9 +1,4 @@
---[[
-    Version: 1.0.5
-    Last Update: 14 / 11 / 2022 | Day / Month / Year
-]]--
 
---// Source
 function obfuscate(source,VarName,WaterMark)
     warn("เริ่ม OBF")
     local Variable = VarName or "Kalon_"

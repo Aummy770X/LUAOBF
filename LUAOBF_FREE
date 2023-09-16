@@ -1,4 +1,3 @@
-
 function obfuscate(source,VarName,WaterMark)
     warn("เริ่ม OBF")
     local Variable = VarName or "Kalon_"
@@ -64,29 +63,17 @@ function obfuscate(source,VarName,WaterMark)
 
         local topic = {
             "Deobfuscate?",
-            random_(math.random(50,150)),
             "Hello World!",
-            random_(math.random(50,150)),
             "IronBrew Fork? Nope.",
-            random_(math.random(50,150)),
             "PSU Fork? Nope.",
-            random_(math.random(50,150)),
             "Touch some grass",
-            random_(math.random(50,150)),
             "New update when?",
-            random_(math.random(50,150)),
             "GhostyDuckyy",
-            random_(math.random(50,150)),
             "Free obfuscator!",
-            random_(math.random(50,150)),
             "E",
-            random_(math.random(50,150)),
             "HEE",
-            random_(math.random(50,150)),
             "HUM",
-            random_(math.random(50,150)),
             "เงี่ยน",
-            random_(math.random(50,150)),
             "เอาตูดกัน",
             random_(math.random(50,150)),
         }
@@ -156,3 +143,5 @@ task.spawn(function()
     obfuscate(source,CustomVarName,WaterMark)
 end)
 end
+
+

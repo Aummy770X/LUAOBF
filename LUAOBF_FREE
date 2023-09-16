@@ -73,8 +73,6 @@ function obfuscate(source,VarName,WaterMark)
             "E",
             "HEE",
             "HUM",
-            "เงี่ยน",
-            "เอาตูดกัน",
             random_(math.random(50,150)),
         }
 

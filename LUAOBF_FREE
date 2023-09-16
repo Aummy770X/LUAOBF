@@ -10,7 +10,7 @@ function obfuscate(source,VarName,WaterMark)
     local WM
 
     if source == nil then
-        source = [[print("Hello World!")]]
+        source = [[print("KALON.EXE")]]
     end
 
     local ticks = tick()

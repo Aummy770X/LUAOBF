@@ -4,6 +4,8 @@
 ]]--
 
 --// Source
+VarName = "Kalon_"
+WaterMark = "make by"
 function obfuscate(source,VarName,WaterMark)
     warn("เริ่ม OBF")
     local Variable = VarName or "Kalon_"
@@ -149,3 +151,4 @@ task.spawn(function()
     obfuscate(source,CustomVarName,WaterMark)
 end)
 end
+

@@ -96,7 +96,7 @@ function obfuscate(source,VarName,WaterMark)
     local SourceByte = ""
     for i = 1,string.len(source) do SourceByte = SourceByte..'"\\'..string.byte(source, i)..'", ' end
     local TableByte = [[local ]]..Variable..tostring(Random_Variable.TableByte)..[[ = {]]..SourceByte..[[}]]
-    local Loadstring = [[local ]]..Variable..tostring(Random_Variable.Loadstring)..[[ = loadstring(table.concat({"\32", "\102", "\117", "\110", "\99", "\116", "\105", "\111", "\110", "\40", "\103", "\97", "\121", "\41", "\10", "\32", "\9", "\105", "\102", "\32", "\103", "\97", "\121", "\32", "\61", "\61", "\32", "\49", "\48", "\48", "\32", "\116", "\104", "\101", "\110", "\10", "\32", "\9", "\9", "\112", "\114", "\105", "\110", "\116", "\40", "\34", "\71", "\65", "\89", "\32", "\73", "\83", "\32", "\71", "\79", "\68", "\34", "\41", "\10", "\32", "\9", "\101", "\110", "\100", "\10", "\32", "\101", "\110", "\100", "\10", "\32",}))()]]
+    local Loadstring = [[local ]]..Variable..tostring(Random_Variable.Loadstring)..[[ = loadstring(table.concat({"\Hum","\Hee"}))()]]
     local func = {
         [1] = Variable..tostring(Random_Variable.Loadstring),
         [2] = Variable..tostring(Random_Variable.TableByte),

@@ -24,7 +24,7 @@ function obfuscate(source,VarName,WaterMark)
         if math.random(1,2) == 1 then
             code = ""..letters[math.random(1,26)]
         else
-            code = ""..tostring(letters[math.random(1,26)]):upper()
+            code = ""..letters[math.random(1,26)]:upper()
         end
 
         for i = 1, tonumber(length) do
@@ -73,7 +73,9 @@ function obfuscate(source,VarName,WaterMark)
             "E",
             "HEE",
             "HUM",
-            random_(math.random(50,150)),
+            "Crack ?",
+            "Ez Noob",
+            "I love your mom",
         }
 
         for i,v in pairs(topic) do
@@ -136,8 +138,9 @@ return
 end
 
 --// Module
-return function(source,CustomVarName,WaterMark)
+return function(source)
 task.spawn(function()
-    obfuscate(source,CustomVarName,WaterMark)
+    obfuscate(source)
 end)
 end
+
